@@ -1,46 +1,44 @@
 ---
 layout: default
 id: home
-title: CSE 201 Schedule
+title: Rooms for Rent near CSUSB
 ---
 
-- hi
-- [Assignment 1](assignments/Assignment1.pdf)
-- [Assignment 2](assignments/Assignment2.pdf)
-- [Assignment 3](assignments/Assignment3.pdf)
-- [Assignment 4](assignments/Assignment4.pdf)
+<div id="carousel-example-generic" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="./{{ post.id }}.html">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="img-responsive" src="images/photo2.jpg" alt="photo 2" />
+      <div class="carousel-caption">
+        Photo 2
+      </div>
+    </div>
+    <div class="item">
+      <img class="img-responsive" src="images/photo3.jpg" alt="photo 3" />
+      <div class="carousel-caption">
+        Photo 3
+      </div>
+    </div>
+    <div class="item">
+      <img class="img-responsive" src="images/photo4.jpg" alt="photo 4" />
+      <div class="carousel-caption">
+        Photo 4
+      </div>
+    </div>
+  </div>
 
-
-<div>
-  {% for page in site.pages %}
-    {% if page.id != 'home' %} 
-      <div>Deadline: {{ page.deadline }}</div>
-      <div>ID: {{ page.id }}</div>
-      <div>Points: {{ page.points }}</div>
-      <div>Deliverable: <a href="./{{ page.id }}.html">{{ page.title }}</a></div>
-      <div>Notes: {{ page.notes }}</div>
-    {% endif %}
-  {% endfor %}
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
 </div>
-
-<div>
-  {% for page in site.pages %}
-    {% if page.id != 'home' %} 
-      <div>Deadline: {{ page.deadline }}</div>
-      <div>ID: {{ page.id }}</div>
-      <div>Points: {{ page.points }}</div>
-      <div>Deliverable: <a href=".{{ page.url }}">{{ page.title }}</a></div>
-      <div>Notes: {{ page.notes }}</div>
-    {% endif %}
-  {% endfor %}
-</div>
-
-
