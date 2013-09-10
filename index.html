@@ -2,11 +2,14 @@
 
 <html>
   <head>
-    <title>{{ page.title }}</title>
+    <title>Room rentals near CSUSB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
     <style>
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
       #my-carousel {
         max-width: 480px;
         margin: auto;
@@ -16,12 +19,18 @@
       }
       .my-container {
         max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
       }
       .map {
-        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
       }
       .map img {
         width: 180px;
+        margin-left: auto;
+        margin-right: auto;
       }
       .carousel-control .icon-prev, .carousel-control .icon-next {
         font-size: 42px;
@@ -44,7 +53,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Rooms near CSUSB</a>
+          <a class="navbar-brand" href="#">Room rentals near CSUSB</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -66,32 +75,22 @@
           <li data-target="#my-carousel" data-slide-to="1"></li>
           <li data-target="#my-carousel" data-slide-to="2"></li>
           <li data-target="#my-carousel" data-slide-to="3"></li>
+          <li data-target="#my-carousel" data-slide-to="4"></li>
+          <li data-target="#my-carousel" data-slide-to="5"></li>
+          <li data-target="#my-carousel" data-slide-to="6"></li>
+          <li data-target="#my-carousel" data-slide-to="7"></li>
         </ol>
         <div class="carousel-inner">
           <div class="item active">
             <img class="img-responsive" src="images/photo2.jpg" alt="photo 2" />
-            <div class="carousel-caption">
-              Oh, home on the range.
-            </div>
           </div>
-          <div class="item">
-            <img class="img-responsive" src="images/photo3.jpg" alt="photo 3" />
-            <div class="carousel-caption">
-              Where the deer ...
-            </div>
-          </div>
-          <div class="item">
-            <img class="img-responsive" src="images/photo4.jpg" alt="photo 4" />
-            <div class="carousel-caption">
-              ... and the antilope roam.
-            </div>
-          </div>
-          <div class="item">
-            <img class="img-responsive" src="images/photo5.jpg" alt="photo 5" />
-            <div class="carousel-caption">
-              Where seldom is heard ...
-            </div>
-          </div>
+          <div class="item"><img class="img-responsive" src="images/photo3.jpg" alt="photo 3" /></div>
+          <div class="item"><img class="img-responsive" src="images/photo4.jpg" alt="photo 4" /></div>
+          <div class="item"><img class="img-responsive" src="images/photo5.jpg" alt="photo 5" /></div>
+          <div class="item"><img class="img-responsive" src="images/photo7.jpg" alt="photo 7" /></div>
+          <div class="item"><img class="img-responsive" src="images/photo8.jpg" alt="photo 8" /></div>
+          <div class="item"><img class="img-responsive" src="images/photo9.jpg" alt="photo 9" /></div>
+          <div class="item"><img class="img-responsive" src="images/photo10.jpg" alt="photo 10" /></div>
         </div>
         <a class="left carousel-control" href="#my-carousel" data-slide="prev">
           <span class="icon-prev"></span>
@@ -103,50 +102,39 @@
 
       <div class="container">
   
-        <p>
-          Location
+        <p style="margin-top: 2em">
+          Grand house next to 
+          <abbr class="initialism" title="California State University San Bernardino">CSUSB</abbr>.
+          Very short walking distance to campus.
+          Quality living at an afordable price.
         </p>
 
         <p>
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
-          I'm the map, I'm the map.
+          Rents start at $450 per month.
+          Quarterly lease available.
+          Shared utilities.
+          High-speed WiFi.
+          Great learning environment.
+          Clean, air conditioned.
+          International atmosphere.
+          Hosted students from China, Germany, Ghana, Japan, Korea, Saudi Arabia, United States, Vietnam.
+          Furnished or unfurnished rooms.
+          Shared kitchen with 
+          oven, microwave, stove, refrigerator, filtered water, auto ice maker.
+          Coin-operated clothes washer and dryer.
         </p>
 
-        <a name="map"></a>
+        <p>
+          Driveway and street parking available.
+          Can walk to campus; no need to pay for campus parking.
+        </p>
 
         <div class="map">
-          <a href="map.html"><img src="images/map.jpg" /></a>
+          <a href="map.html"><img src="images/map.jpg" class="img-rounded thumbnail" /></a>
         </div>
 
-        <a name="contact"></a>
-  
-        <p>
-          Yunfei Turner
-        </p>
-
-        <p>
-          tel: 909-380-6577
+        <p style="margin-top: 2em; margin-bottom: 4em; text-align: center">
+          Contact Fay at 909-380-6577 or rovoy@yahoo.com
         </p>
 
       </div>
