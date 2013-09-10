@@ -8,7 +8,7 @@
     <style type="text/css">
       html { height: 100% }
       body { height: 100%; margin: 0; padding: 0 }
-      #map-container { 
+      #map-container { height: 100%; padding-top: 51px }
       #map-canvas { height: 100% }
     </style>
 
@@ -67,13 +67,15 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="map.html">Map</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
-    <div id="map-canvas" />
+    <div id="map-container">
+      <div id="map-canvas" />
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile.custom.min.js"></script>
