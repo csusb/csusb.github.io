@@ -27,10 +27,15 @@
         margin-top: 2em;
         margin-bottom: 2em;
       }
-      .map img {
+      .map, .qr-code {
+        margin-top: 2em;
+        margin-bottom: 2em;
         width: 180px;
         margin-left: auto;
         margin-right: auto;
+      }
+      .qr-code {
+        margin-bottom: 4em;
       }
       .carousel-control .icon-prev, .carousel-control .icon-next {
         font-size: 42px;
@@ -66,8 +71,6 @@
     </div>
     
     <div class="container my-container">
-    
-      <a name="home"></a>
 
       <div id="my-carousel" class="carousel slide under-navbar" data-interval="false">
         <ol class="carousel-indicators">
@@ -133,9 +136,13 @@
           <a href="map.html"><img src="images/map.jpg" class="img-rounded thumbnail" /></a>
         </div>
 
-        <p style="margin-top: 2em; margin-bottom: 4em; text-align: center">
+        <p style="margin-top: 2em; text-align: center">
           Contact Fay at 909-380-6577 or rovoy@yahoo.com
         </p>
+
+        <div class="thumbnail qr-code">
+          <img src="images/qr-code.png" />
+        </div>
 
       </div>
 
@@ -147,10 +154,6 @@
     
     <script>
       $(document).ready(function() {
-        //$('.navbar-collapse').on('click', 'a', null, function() {
-        //  $('.navbar-collapse').collapse('hide');
-        //});
-        
   	$("#my-carousel").swiperight(function() {
           $('.carousel-control.left').trigger('click');
         });
